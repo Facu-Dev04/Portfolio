@@ -1,11 +1,11 @@
 body {
-  background: #112a30;
+  background-color: black;
   color: white;
 }
 
 .box {
-  width: 400px;
-  height: 400px;
+  width: 390px;
+  height: 380px;
   border-radius: 50%;
   background-color: #1b1930;
   position: relative;
