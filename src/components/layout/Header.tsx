@@ -3,7 +3,7 @@
 
 export function Header() {
     return (
-        <header className="fixed flex flex-row justify-center items-center w-full p-5 ">
+        <header className="relative flex flex-row justify-center items-center w-full p-5 z-50">
             <nav className=" flex flex-row gap-x-10  ">
                 <a href="" className="bg-transparent hover:text-emerald-400 transition duration-500">Inicio</a>
                 <a href="" className="bg-transparent hover:text-emerald-400 transition duration-500">Habilidades</a>

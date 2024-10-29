@@ -6,7 +6,6 @@ import '../style/banner.css'
 export default function Home() {
 
 
-
   return (
     <main className="banner">
       <Header />
