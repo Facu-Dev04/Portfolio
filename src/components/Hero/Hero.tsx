@@ -2,7 +2,7 @@ import '../../style/style.css'
 
 export function Hero() {
     return (
-        <section className="flex flex-row justify-between items-center h-screen w-full">
+        <section className="flex flex-row justify-between items-center h-screen w-full a">
             <div className='flex flex-row items-center justify-center '>
                 <article className="flex flex-col  w-[50%]">
                     <h3 className="pb-3 text-lg">Hola, soy</h3>
@@ -15,7 +15,6 @@ export function Hero() {
                 <article className="box ">
 
                 </article>
-
             </div>
         </section>
     )

@@ -4,13 +4,12 @@ body {
 }
 
 .box {
-  width: 390px;
+  width: 382px;
   height: 380px;
   border-radius: 50%;
   background-color: #1b1930;
   position: relative;
   background: url("../../public/img/Foto/Facundo.jpg");
-
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 1s;
