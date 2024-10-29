@@ -17,7 +17,7 @@ export function Hero() {
         canvas.width = banner.offsetWidth;
         canvas.height = banner.offsetHeight;
 
-        const arrayColors = ['#eee', '#545454', '#596d91', '#bb5a68', '#696541'];
+        const arrayColors = ['#eee', '#545454', '#596d91', '#bb5a68', '#696541', '#ffeedd'];
         let dots = Array.from({ length: 50 }, () => ({
             x: Math.floor(Math.random() * canvas.width),
             y: Math.floor(Math.random() * canvas.height),
@@ -84,12 +84,12 @@ export function Hero() {
     return (
         <section ref={bannerRef} className="banner flex flex-row w-full">
             <canvas ref={canvasRef} id="dotsCanvas" className="absolute top-0 left-0 w-full h-screen" />
-            <div className='flex flex-row justify-center'>
+            <div className='flex flex-row justify-center w-[85%]'>
                 <div className='flex flex-row items-center text-start justify-center'>
-                    <article className="flex flex-col w-[60%]">
+                    <article className="flex flex-col w-[70%]">
                         <h3 className="pb-3 text-lg ">Hola, soy</h3>
                         <h1 className="text-6xl font-bold font-inter">Facundo Pettersson</h1>
-                        <h2 className="w-[80%] pt-3">
+                        <h2 className="w-[70%] pt-3">
                             Soy diseñador web con más de 3 años de experiencia en diseño frontend, creando interfaces atractivas
                             y funcionales que mejoran la experiencia del usuario.
                         </h2>
