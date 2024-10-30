@@ -82,13 +82,15 @@ export function Hero() {
     }, []);
 
     return (
-        <section ref={bannerRef} className="banner flex flex-row w-full">
+        <section ref={bannerRef} className="banner flex flex-row w-full relative">
             <canvas ref={canvasRef} id="dotsCanvas" className="absolute top-0 left-0 w-full h-screen" />
-            <div className='flex flex-row justify-center w-[85%]'>
-                <div className='flex flex-row items-center text-start justify-center'>
-                    <article className="flex flex-col w-[70%]">
+
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 backdrop-blur-2xl" />
+            <div className='flex flex-row justify-center w-[85%] relative z-10'>
+                <div className='flex flex-row items-center text-start justify-center '>
+                    <article className="flex flex-col w-[70%] text-white"> {/* Cambié el texto a blanco para mayor contraste */}
                         <h3 className="pb-3 text-lg ">Hola, soy</h3>
-                        <h1 className="text-6xl font-bold font-inter">Facundo Pettersson</h1>
+                        <h1 className="text-6xl text-red-500 font-bold ">Facundo Pettersson</h1>
                         <h2 className="w-[70%] pt-3">
                             Soy diseñador web con más de 3 años de experiencia en diseño frontend, creando interfaces atractivas
                             y funcionales que mejoran la experiencia del usuario.
@@ -96,7 +98,7 @@ export function Hero() {
                     </article>
                 </div>
                 <div className='box'>
-
+                    {/* Contenido adicional aquí si es necesario */}
                 </div>
             </div>
         </section>
