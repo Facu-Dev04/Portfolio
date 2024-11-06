@@ -1,4 +1,4 @@
-import { Section_Experience } from "@/components/Experience/Section_Experience";
+import { Section_Experience } from "@/components/Experience/Page_Experience";
 import Link from "next/link";
 
 

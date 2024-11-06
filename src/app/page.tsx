@@ -1,11 +1,11 @@
 'use client'
+import '../style/banner.css';
 import { Hero } from "@/components/Hero/Hero";
 import { Header } from "@/components/layout/Header";
 import { Projects } from "@/components/Projects/Projects";
-import '../style/banner.css';
 import { useEffect, useRef } from "react";
 import { Section_Skill } from "@/components/Skills/Section_Skills";
-import { Section_Experience } from "@/components/Experience/Section_Experience";
+import ExperienceSection from '@/components/Experience/Section_Experience';
 
 type Dot = {
   x: number;
@@ -102,13 +102,15 @@ export default function Home() {
         <section id="hero" className="flex mt-16 ">
           <Hero />
         </section>
+        <section id="#experiencia" className="flex justify-center item-center">
+          <ExperienceSection />
+        </section>
         <section id="habilidades" className="">
           <Section_Skill />
         </section>
         <section id="proyectos" className="">
           <Projects />
         </section>
-
       </div>
     </main>
   );
