@@ -13,7 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        custom: ['serif', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
 
     },

@@ -1,9 +1,10 @@
 .box {
-  width: 402px;
+  width: 400px;
   height: 340px;
   border-radius: 50%;
   background-color: #1b1930;
   position: relative;
+  right: 100px;
   background: url("../../public/img/Foto/Facundo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
