@@ -11,31 +11,12 @@ const validationSchema = Yup.object({
 const ContactForm = () => {
 
   // Función de envío de datos (solo muestra en consola)
-  // const handleSubmit = (values: { name: string; email: string; message: string }) => {
-  //   console.log('Formulario enviado con los siguientes datos:');
-  //   console.log(values);
-  // };
-
-  const handleSubmit = async (values: { name: string; email: string; message: string }) => {
-    try {
-      const response = await fetch('/api/route.ts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      });
-
-      const data = await response.json();
-      if (response.ok) {
-        console.log(data.message);
-      } else {
-        console.error(data.message);
-      }
-    } catch (error) {
-      console.error('Error al enviar el formulario:', error);
-    }
+  const handleSubmit = (values: { name: string; email: string; message: string }) => {
+    console.log('Formulario enviado con los siguientes datos:');
+    console.log(values);
   };
+
+  
 
   return (
     <article>
