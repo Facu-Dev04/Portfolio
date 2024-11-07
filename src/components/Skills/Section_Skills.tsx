@@ -7,9 +7,11 @@ import { gsap } from "gsap";
 
 export const Section_Skill = () => {
   useEffect(() => {
+
     const carrucel: any = document.querySelector("#carrucel");
     const totalWidth = carrucel.scrollWidth / 2;
     const duration = 15;
+
 
 
     const animateCarrousel = () => {
@@ -29,7 +31,7 @@ export const Section_Skill = () => {
   return (
     <section className="flex flex-col h-screen justify-center relative ">
       <article className="flex flex-col justify-center items-center ">
-        <h1 className="text-6xl font-bold pb-4 font-poppins ">Tecnologías</h1>
+        <h2 className="text-6xl font-bold pb-4 font-poppins ">Tecnologías</h2>
         <h3 className="pb-10 pt-6 font-semibold text-xl text-center w-[50%]">Mi área principal de especialización es el desarrollo Frontend pero mi formación es FullStack.</h3>
 
       </article>

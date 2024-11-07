@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <main ref={bannerRef} className="banner h-[100%] relative ">
       <canvas ref={canvasRef} id="dotsCanvas" className="absolute top-0 left-0 w-full h-full opacity-50 backdrop-blur-2xl" />
-      <div className="flex flex-col  h-screen overflow-y-auto scroll-smooth ">
-        <section className='scroll-smooth flex flex-row justify-center items-center w-full top-0 left-0 fixed mt-3 z-[100] '>
+      <div className="flex flex-col h-screen overflow-y-auto scroll-smooth ">
+        <section className='flex flex-col md:flex-row  h-full  fixed md:left-0 md:top-0 md:mt-3 z-50 '>
           <Header />
         </section>
         <section id="hero" className="flex mt-16 ">

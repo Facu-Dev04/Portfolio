@@ -38,9 +38,6 @@ main .banner {
   margin-top: -70px;
 }
 
-h1 {
-  z-index: 100;
-}
 
 h1.right {
   --to: right;
