@@ -1,25 +1,27 @@
 .box {
   width: 400px;
-  height: 340px;
+  height: 325px; /* Asegura que height sea igual a width para mantener el círculo */
   border-radius: 50%;
   background-color: #1b1930;
   position: relative;
   right: 100px;
   background: url("../../public/img/Foto/Facundo.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   transition: all 1s;
 }
+
 @property --angle {
   syntax: "<angle>";
   inherits: true;
   initial-value: 0deg;
 }
+
 .box::after,
 .box::before {
   content: "";
   position: absolute;
-
   width: 100%;
   height: 100%;
   border-radius: inherit;
@@ -38,17 +40,26 @@
   padding: 5px;
   box-sizing: unset;
 }
+
 .box::after {
   filter: blur(60px);
 }
+
 @keyframes autoRotate {
   to {
     --angle: 360deg;
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1150px) {
   .box {
     display: none;
+  }
+}
+
+@media (min-width: 1859px) {
+  .box {
+    width: 400px;
+    height: 400px;
   }
 }

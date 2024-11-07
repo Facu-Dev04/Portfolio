@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { EXPERIENCE } from '@/data/Experience_Data';
+import Link from 'next/link';
 
 interface ExperienceItemProps {
   title: string;
@@ -51,9 +52,9 @@ export const Experience: React.FC<ExperienceItemProps> = ({ title, position, url
       </div>
       <p className="leading-relaxed tracking-wide">{description}</p>
       {url && (
-        <a href={"/experiencia"} className="text-pink-400 hover:text-blue-400 underline text-lg">
+        <Link href={url} target='_blank' className="text-pink-400 hover:text-blue-400 underline text-lg">
           Link
-        </a>
+        </Link>
       )}
 
     </div>
