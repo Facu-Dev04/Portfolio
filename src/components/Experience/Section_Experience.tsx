@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   const experiences = EXPERIENCE
 
   return (
-    <div id="experiencia" className="max-w-6xl flex flex-col items-center  justify-center">
+    <div className="pt-10 max-w-6xl flex flex-col items-center justify-center ">
       <div className=" text-center mb-10">
         <h2 className="text-5xl font-bold text-white relative inline-block ">
           Experiencia

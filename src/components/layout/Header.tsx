@@ -1,20 +1,32 @@
 'use client';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export function Header() {
-
-
-
+    const scrollToSection = (id: any) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
-        <header className={`relative top-0 left-0  rounded-md p-5 flex flex-row justify-center items-center w-full z-50 transition-colors duration-300`}>
+        <header className="flex flex-row items-center justify-center bg-gray-600 w-[50%] rounded-3xl p-5 transition-colors duration-300">
             <nav className="flex flex-row gap-x-10">
-                <Link href="#hero"  className="bg-transparent hover:text-emerald-400 transition duration-500">Inicio</Link>
-                <Link href="/experiencia"  className="bg-transparent hover:text-emerald-400 transition duration-500">Experiencia</Link>
-                <Link href="#habilidades"  className="bg-transparent hover:text-emerald-400 transition duration-500">Habilidades</Link>
-                <Link href="#proyectos"  className="bg-transparent hover:text-emerald-400 transition duration-500">Proyectos</Link>
-                <Link href="#contacto"  className="bg-transparent hover:text-emerald-400 transition duration-500">Contacto</Link>
+                <button type='submit' onClick={() => scrollToSection('hero')} className="bg-transparent hover:text-emerald-400 transition duration-500">
+                    Inicio
+                </button>
+                <button type='submit' onClick={() => scrollToSection('experiencia')} className="bg-transparent hover:text-emerald-400 transition duration-500">
+                    Experiencia
+                </button>
+                <button type='submit' onClick={() => scrollToSection('habilidades')} className="bg-transparent hover:text-emerald-400 transition duration-500">
+                    Habilidades
+                </button>
+                <button type='submit' onClick={() => scrollToSection('proyectos')} className="bg-transparent hover:text-emerald-400 transition duration-500">
+                    Proyectos
+                </button>
+                <button type='submit' onClick={() => scrollToSection('contacto')} className="bg-transparent hover:text-emerald-400 transition duration-500">
+                    Contacto
+                </button>
             </nav>
         </header>
     );

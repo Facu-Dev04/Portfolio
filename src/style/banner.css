@@ -38,22 +38,6 @@ main .banner {
   margin-top: -70px;
 }
 
-.banner button {
-  all: unset;
-  border: 1px solid #afaeae55;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-image: linear-gradient(to bottom, #eee1, transparent, #eee1);
-  cursor: pointer;
-  transition: 0.5s;
-}
-.banner button:hover {
-  background-color: #c691e6;
-  color: #040018;
-  box-shadow: 0 0 50px #c691e6;
-}
-
-
 h1 {
   z-index: 100;
 }

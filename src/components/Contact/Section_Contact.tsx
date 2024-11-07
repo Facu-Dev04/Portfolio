@@ -16,17 +16,17 @@ const ContactForm = () => {
     console.log(values);
   };
 
-  
+
 
   return (
     <article>
-      <div className="flex flex-row justify-center">
-        <h1 className="font-bold text-4xl mb-10">Contáctame</h1>
+      <div className="flex flex-row justify-center relative pt-10">
+        <h2 className="font-bold text-5xl mb-10">Contáctame</h2>
       </div>
       <Formik
         initialValues={{ name: '', email: '', message: '' }}
         validationSchema={validationSchema}
-        onSubmit={handleSubmit}  
+        onSubmit={handleSubmit}
       >
         {({ isSubmitting }) => (
           <Form id="contactForm" className="contact-form flex flex-col gap-4 p-4 max-w-xl mx-auto">
