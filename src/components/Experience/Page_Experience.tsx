@@ -10,7 +10,7 @@ export function Section_Experience() {
             content: (
                 <div className="relative z-10 ">
                     <h1 className="text-white font-bold text-3xl pb-4 ">Desarrollador Frontend Jr</h1>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 ">
+                    <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 ">
                         Implementé interfaces de usuario y desarrollé la lógica de cliente, incluyendo manejo de roles y rutas. Realicé integraciones de frameworks y bibliotecas, y configuré el entorno de trabajo para recibir información del backend. Mi contribución abarcó desde la integración de componentes hasta la creación de una experiencia de usuario coherente y funcional.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -46,7 +46,7 @@ export function Section_Experience() {
             content: (
                 <div className="relative h-screen">
                     <h1 className="text-white font-bold text-3xl pb-4 ">Desarrollador Frontend Jr</h1>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 ">
+                    <p className="text-white dark:text-white text-xs md:text-sm font-normal mb-8 ">
                         Colaboré en el desarrollo de un sistema médico integral que incluye reserva de turnos, comunicación con médicos, intercambio cruzado de órganos y un chatbot para asistencia a pacientes. Me encargué de integrar funcionalidades clave, asegurando que la plataforma fuese intuitiva y efectiva para los usuarios finales.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -84,23 +84,23 @@ export function Section_Experience() {
             content: (
                 <div className="relative h-screen">
                     <h1 className="text-white font-bold text-3xl pb-4 ">Desarrollador Frontend Jr</h1>
-                    <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+                    <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
                         Desarrollé la interfaz del dashboard para Easy Turno, configurando el sistema de gestión de turnos para profesionales con integración de APIs en el frontend, lo que permite visualizar la información de los clientes y facilita la gestión eficiente de los turnos.
                     </p>
                     <div className="mb-8">
-                        <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+                        <div className="flex gap-2 items-center text-white dark:text-white text-xs md:text-sm">
                             ✅ Configuración completa del sistema de gestión de turnos para profesionales
                         </div>
-                        <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+                        <div className="flex gap-2 items-center text-white dark:text-white text-xs md:text-sm">
                             ✅ Investigación exhaustiva para entender las necesidades del usuario
                         </div>
-                        <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+                        <div className="flex gap-2 items-center text-white dark:text-white text-xs md:text-sm">
                             ✅ Integración de diversas APIs en el frontend
                         </div>
-                        <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+                        <div className="flex gap-2 items-center text-white dark:text-white text-xs md:text-sm">
                             ✅ Visualización de toda la información relevante de los clientes que reservan citas
                         </div>
-                        <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+                        <div className="flex gap-2 items-center text-white dark:text-white text-xs md:text-sm">
                             ✅ Sistema optimizado para que los profesionales gestionen sus turnos de manera eficiente
                         </div>
                     </div>
