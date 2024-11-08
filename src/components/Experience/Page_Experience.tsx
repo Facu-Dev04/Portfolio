@@ -51,7 +51,7 @@ export function Section_Experience() {
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                         <Image
-                            src="/img/Project/Justina_io/justina.jpg"
+                            src="/img/Project/Justina_io/Justina.jpg"
                             alt="startup template"
                             width={500}
                             height={500}
