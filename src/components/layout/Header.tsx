@@ -17,7 +17,7 @@ export function Header() {
     };
 
     return (
-        <header className={`fixed w-full md:w-[50%] md:bg-gray-500  mt-3 p-2 rounded-xl transition-all duration-500 md:flex md:justify-center md:items-center`}>
+        <header className={`fixed w-full lg:w-[80%]  xl:w-[50%] md:bg-gray-500  mt-3 p-2 rounded-xl transition-all duration-500 md:flex md:justify-center md:items-center`}>
             {/* Icono del menú hamburguesa */}
             <div className={`md:hidden flex flex-col content-center mr-4 items-end w-full`} onClick={toggleMenu}>
                 <div className={`w-6 h-0.5 bg-white mb-1  duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2 hidden' : ''}`}></div>
