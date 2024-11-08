@@ -38,7 +38,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-lg font-bold md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Experiencia
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-2xl">
+        <p className="text-white dark:text-white text-sm md:text-base max-w-2xl">
           Durante mis dos años de experiencia como desarrollador, he trabajado en diversos proyectos con equipos multidisciplinarios, donde la comunicación efectiva y las habilidades blandas han sido fundamentales para el éxito del equipo y el desarrollo de soluciones.
         </p>
       </div>
@@ -57,8 +57,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 <h3 className="hidden  md:block md:pl-20 md:text-4xl font-bold text-neutral-500 dark:text-neutral-500 ">
                   {item.title}
                 </h3>
-                <h4 className="text-white pt-3 md:pl-20">{item.parrafo}</h4>
                 <h5 className="text-white pt-3 md:pl-20">{item.empresa}</h5>
+                <h4 className="text-white pt-3 md:pl-20">{item.parrafo}</h4>
               </div>
             </div>
 
