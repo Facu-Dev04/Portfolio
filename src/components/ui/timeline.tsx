@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 interface TimelineEntry {
   title: string;
   parrafo?: string
+  empresa?: string
   content: React.ReactNode;
 }
 
@@ -57,6 +58,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                   {item.title}
                 </h3>
                 <h4 className="text-white pt-3 md:pl-20">{item.parrafo}</h4>
+                <h5 className="text-white pt-3 md:pl-20">{item.empresa}</h5>
               </div>
             </div>
 
