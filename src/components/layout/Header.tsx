@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { number } from 'yup';
 
 export function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -18,9 +17,9 @@ export function Header() {
     };
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 mt-3 p-2 w-[50%] rounded-xl transition-all duration-500 ${isMenuOpen ? "" : "bg-gray-500"} md:flex md:justify-center md:items-center`}>
+        <header className={`fixed w-full  z-50 mt-3 p-2 md:w-[50%] rounded-xl transition-all duration-500 ${isMenuOpen ? "" : ""} md:flex md:justify-center md:items-center`}>
             {/* Icono del menú hamburguesa */}
-            <div className={`md:hidden flex flex-col items-end w-full`} onClick={toggleMenu}>
+            <div className={`md:hidden flex flex-col content-center mr-4  items-end w-full`} onClick={toggleMenu}>
                 <div className={`w-6 h-0.5 bg-white mb-1  duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2 hidden' : ''}`}></div>
                 <div className={`w-6 h-0.5 bg-white mb-1 transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 ' : 'opacity-100'}`}></div>
                 <div className={`w-6 h-0.5 bg-white transition-transform duration-300 ${isMenuOpen ? 'hidden' : ''}`}></div>
