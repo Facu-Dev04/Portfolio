@@ -24,10 +24,9 @@ const ExperienceSection = () => {
         </ol>
 
       </div>
-      <div className="flex flex-row items-end relative left-96 mt-10">
+      <div className="flex flex-row items-start md:items-end relative right-[55px] md:left-96 mt-10">
         <Link href={"/experiencia"} className="font-poppins border px-2 py-1 hover:bg-emerald-600 duration-500" >
           Más información
-
         </Link>
       </div>
     </div>
