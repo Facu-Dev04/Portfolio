@@ -1,6 +1,6 @@
 .box {
   width: 400px;
-  height: 325px; /* Asegura que height sea igual a width para mantener el círculo */
+  height: 400px; /* Asegura que height sea igual a width para mantener el círculo */
   border-radius: 50%;
   background-color: #1b1930;
   position: relative;

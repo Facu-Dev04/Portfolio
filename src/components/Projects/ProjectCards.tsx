@@ -20,14 +20,14 @@ export function ProjectCards({ url, title, parrafo, link_codigo, link_deploy, to
       <CardBody className={`relative group bg-transparent dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] `}>
         <CardItem
           translateZ="50"
-          className="text-xl text-center font-bold text-neutral-600 dark:text-white "
+          className="text-xl text-center font-bold text-white  "
         >
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mb-5 dark:text-neutral-300 hover:text-red-500 user-select-none cursor-default"
+          className="text-neutral-500 text-sm max-w-sm mb-5 dark:text-white hover:text-red-500 user-select-none cursor-default"
           onMouseDown={(e: any) => e.preventDefault()}
         >
           {parrafo}
