@@ -16,7 +16,7 @@ export function Hero() {
                     <article className="flex flex-col w-[80%] text-white">
                         <h3 className="pb-3 text-lg ">Hola, soy</h3>
                         <h1 className="text-5xl text-red-500 font-semibold font-poppins">Facundo Pettersson</h1>
-                        <h2 className="w-[70%] pt-3">
+                        <h2 className="md:w-[65%] md:text-[16px] pt-3 w-full text-[14.6px] md:text- ">
                             Soy diseñador web con más de 2 años de experiencia en diseño frontend, creando interfaces atractivas
                             y funcionales que mejoran la experiencia del usuario.
                         </h2>
