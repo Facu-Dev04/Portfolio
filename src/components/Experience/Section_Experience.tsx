@@ -1,5 +1,6 @@
 import { EXPERIENCE } from "@/data/Experience_Data";
 import { Experience } from "./Experience_Item";
+import Link from "next/link";
 
 const ExperienceSection = () => {
 
@@ -22,6 +23,12 @@ const ExperienceSection = () => {
           ))}
         </ol>
 
+      </div>
+      <div className="flex flex-row items-end relative left-96 mt-10">
+        <Link href={"/experiencia"} className="font-poppins border px-2 py-1 hover:bg-emerald-600 duration-500" >
+          Más información
+
+        </Link>
       </div>
     </div>
 
