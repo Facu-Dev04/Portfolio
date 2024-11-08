@@ -82,7 +82,7 @@ export function Section_Experience() {
             parrafo: "abr. 2024 - 3 meses",
 
             content: (
-                <div className="relative h-screen mb-10">
+                <div className="relative h-screen mb-20">
                     <h1 className="text-white font-bold text-3xl pb-4 ">Desarrollador Frontend Jr</h1>
                     <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
                         Desarrollé la interfaz del dashboard para Easy Turno, configurando el sistema de gestión de turnos para profesionales con integración de APIs en el frontend, lo que permite visualizar la información de los clientes y facilita la gestión eficiente de los turnos.
@@ -136,7 +136,7 @@ export function Section_Experience() {
             parrafo: "Feb. 2024 - 3 meses",
             empresa: "NoCountry",
             content: (
-                <div className="relative h-screen ">
+                <div className=" ">
                     <h1 className="text-white font-bold text-3xl pb-4 ">Desarrollador Frontend Jr</h1>
 
                     <div className="mb-8 text-white">
