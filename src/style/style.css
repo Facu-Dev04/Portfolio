@@ -63,3 +63,17 @@
     height: 400px;
   }
 }
+
+@media (min-width: 1365px) and (max-width: 1500px) {
+  .box {
+    width: 400px;
+    height: 325px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .box {
+    width: 400px;
+    height: 325px;
+  }
+}

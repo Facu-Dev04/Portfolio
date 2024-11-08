@@ -17,16 +17,16 @@ export function Header() {
     };
 
     return (
-        <header className={`fixed w-full  z-50 mt-3 p-2 md:w-[50%] rounded-xl transition-all duration-500 ${isMenuOpen ? "" : ""} md:flex md:justify-center md:items-center`}>
+        <header className={`fixed w-full md:w-[50%] md:bg-gray-500  mt-3 p-2 rounded-xl transition-all duration-500 md:flex md:justify-center md:items-center`}>
             {/* Icono del menú hamburguesa */}
-            <div className={`md:hidden flex flex-col content-center mr-4  items-end w-full`} onClick={toggleMenu}>
+            <div className={`md:hidden flex flex-col content-center mr-4 items-end w-full`} onClick={toggleMenu}>
                 <div className={`w-6 h-0.5 bg-white mb-1  duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2 hidden' : ''}`}></div>
                 <div className={`w-6 h-0.5 bg-white mb-1 transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 ' : 'opacity-100'}`}></div>
                 <div className={`w-6 h-0.5 bg-white transition-transform duration-300 ${isMenuOpen ? 'hidden' : ''}`}></div>
             </div>
 
             {/* Menú deslizable en dispositivos móviles */}
-            <nav className={`md:hidden  md:flex-row md:gap-10 md:justify-center md:items-center fixed top-0 right-0 h-full w-1/3 bg-gray-800 text-white p-5 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <nav className={`md:hidden  md:flex-row md:gap-10 md:justify-center md:items-center fixed top-0 right-0 h-full w-1/3 bg-gray-500 text-white p-5 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <button onClick={toggleMenu} className="absolute top-4 right-4 text-2xl text-white">✕</button>
                 <ul className="flex flex-col gap-6 mt-10">
                     <li><button onClick={() => scrollToSection('hero')} className="hover:text-emerald-400 transition duration-500">Inicio</button></li>
