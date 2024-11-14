@@ -1,84 +1,35 @@
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
+// pages/contact.js
+import GoogleSheetsAuth from '../../app/api/GoogleSheetsAuth';
 
-// Validación con Yup
-const validationSchema = Yup.object({
-  name: Yup.string().required('El nombre es obligatorio'),
-  email: Yup.string().email('Correo electrónico inválido').required('El correo electrónico es obligatorio'),
-  message: Yup.string().required('El mensaje es obligatorio'),
-});
-
-const ContactForm = () => {
-
-  // Función de envío de datos (solo muestra en consola)
-  const handleSubmit = (values: { name: string; email: string; message: string }) => {
-    console.log('Formulario enviado con los siguientes datos:');
-    console.log(values);
-  };
-
-
-
+export default function Contact() {
   return (
-    <article>
-      <div className="flex flex-row justify-center relative pt-10">
-        <h2 className="font-bold text-5xl mb-10">Contáctame</h2>
-      </div>
-      <Formik
-        initialValues={{ name: '', email: '', message: '' }}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
-        {({ isSubmitting }) => (
-          <Form id="contactForm" className="contact-form flex flex-col gap-4 p-4 max-w-xl mx-auto">
-            <div className="form-group flex flex-col">
-              <label htmlFor="name" className="text-white mb-2">Nombre y Apellido</label>
-              <Field
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Facundo Pettersson"
-                className="input-field py-2 px-2 rounded-md text-black "
-              />
-              <ErrorMessage name="name" component="span" className="error text-red-500" />
-            </div>
+    <div className='flex flex-col justify-center items-center'>
+      <h1 className='font-bold text-2xl'>Formulario de Contacto</h1>
+      <form className='flex flex-col justify-center  w-1/3 mt-10 mb-10 gap-y-4'>
+        <div className='flex flex-col gap-y-2'>
+          <label htmlFor="name" className=''>Nombre y Apellido</label>
+          <input type="text" id="name" className='outline-none p-1 rounded-md text-black' name="name" required />
+        </div>
 
-            <div className="form-group flex flex-col">
-              <label htmlFor="email" className="text-white mb-2">Correo electrónico</label>
-              <Field
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@example.com"
-                className="input-field py-2 px-2 rounded-md text-black"
-              />
-              <ErrorMessage name="email" component="span" className="error text-red-500" />
-            </div>
+        <div className='flex flex-col gap-y-2'>
+          <label htmlFor="email">Correo Electronico</label>
+          <input type="email" className='outline-none p-1 rounded-md text-black' id="email" name="email" required />
+        </div>
 
-            <div className="form-group flex flex-col">
-              <label htmlFor="message" className="text-white mb-2">Mensaje</label>
-              <Field
-                as="textarea"
-                id="message"
-                name="message"
-                className="input-field h-32 text-black pl-2 py-1 resize-none rounded-md"
-              />
-              <ErrorMessage name="message" component="span" className="error text-red-500" />
-            </div>
+        <div className='flex flex-col gap-y-2'>
+          <label htmlFor="message">Mensaje</label>
+          <textarea id="message" name="message" className='outline-none p-1 rounded-md text-black' required></textarea>
+        </div>
 
-            <div className="flex flex-row justify-center">
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="bg-black px-4 py-2 border border-white w-1/3 rounded-md hover:scale-105 duration-500 hover:bg-green-600"
-              >
-                Enviar
-              </button>
-            </div>
-          </Form>
-        )}
-      </Formik>
-    </article>
+        <div className='flex flex-row justify-center'>
+          <button className=' border border-gray-200 rounded-lg p-1 duration-200 transition-all hover:bg-red-500 w-1/3 text-center' type="submit">Enviar</button>
+
+        </div>
+      </form>
+
+      <GoogleSheetsAuth />
+    </div>
   );
-};
+}
 
-export default ContactForm;
+

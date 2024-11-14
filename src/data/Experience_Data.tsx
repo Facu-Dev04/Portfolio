@@ -1,14 +1,5 @@
 export const EXPERIENCE = [
     {
-        id: 'job1',
-        title: 'Freelance - Colaboración en Cirosoft',
-        position: "Frontend Developer",
-        url: "https://www.cirosoft.co/",
-        startDate: 'Octubre 2024 - Actualmente',
-        endDate: "",
-        description: 'Implementé interfaces de usuario y desarrollé la lógica de cliente, incluyendo manejo de roles y rutas. Realicé integraciones de frameworks y bibliotecas, y configuré el entorno de trabajo para recibir información del backend. Mi contribución abarcó desde la integración de componentes hasta la creación de una experiencia de usuario coherente y funcional.',
-    },
-    {
         id: 'job2',
         title: 'Freelance - Colaboración en Justina.io',
         position: "Frontend Developer",

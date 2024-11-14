@@ -23,6 +23,7 @@ export function Hero() {
                     </article>
                     <article className='flex flex-row  mt-5 items-start text-start justify-center w-full '>
                         <div className='flex flex-row gap-x-10 w-[80%]'>
+                            
                             <Link href={"https://www.linkedin.com/in/facundo-pettersson/"} target='_blank'>
                                 <Icon_Linkedi width={25} height={25} />
                             </Link>
