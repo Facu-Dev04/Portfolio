@@ -7,7 +7,6 @@ import { useRef } from "react";
 import { Section_Skill } from "@/components/Skills/Section_Skills";
 import ExperienceSection from '@/components/Experience/Section_Experience';
 import { useBannerEffect } from '@/utils/useBannerEffect';
-import ContactForm from '@/components/Contact/Section_Contact';
 import { Footer } from '@/components/layout/Footer';
 import { Resumen } from '@/components/Resumen/Resumen';
 
