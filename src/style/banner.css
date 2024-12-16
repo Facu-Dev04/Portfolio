@@ -1,6 +1,5 @@
 body {
   color: #eee;
-
   font-family: Poppins;
   margin: 0;
   background-image: repeating-linear-gradient(
@@ -17,7 +16,6 @@ body {
 
 header {
   margin: auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;

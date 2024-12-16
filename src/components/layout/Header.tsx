@@ -26,7 +26,7 @@ export function Header() {
             </div>
 
             {/* Menú deslizable en dispositivos móviles */}
-            <nav className={`md:hidden  md:flex-row md:gap-10 md:justify-center md:items-center fixed top-0 right-0 h-full w-1/3 bg-gray-500 text-white p-5 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <nav className={`md:hidden md:flex-row md:gap-10 md:justify-center md:items-center fixed top-0 right-0 h-full w-1/3 bg-gray-500 text-white p-5 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <button onClick={toggleMenu} className="absolute top-4 right-4 text-2xl text-white">✕</button>
                 <ul className="flex flex-col gap-6 mt-10">
                     <li><button onClick={() => scrollToSection('hero')} className="hover:text-emerald-400 transition duration-500">Inicio</button></li>
