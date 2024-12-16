@@ -6,15 +6,20 @@ import { skills } from "../../utils/skill";
 import Link from "next/link";
 
 interface type {
-  url: string | any;
-  title: string;
-  parrafo: string;
-  link_deploy: string;
-  link_codigo: string;
-  tools: string[];
+  date: {
+    url: string | any;
+    title: string;
+    parrafo: string;
+    link_deploy: string;
+    link_codigo: string;
+    tools: string[];
+  }
 }
 
-export function ProjectCards({ url, title, parrafo, link_codigo, link_deploy, tools }: type) {
+export function ProjectCards({ date }: type) {
+
+  const { url, title, parrafo, link_codigo, link_deploy, tools } = date;
+
   return (
     <CardContainer >
       <CardBody className={`relative group bg-transparent dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] `}>
