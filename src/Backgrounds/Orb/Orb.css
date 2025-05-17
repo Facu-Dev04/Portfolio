@@ -1,0 +1,15 @@
+/*
+	Installed from https://reactbits.dev/ts/default/
+*/
+
+.orb-container {
+   /* Asegura que height sea igual a width para mantener el círculo */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center
+ 
+}

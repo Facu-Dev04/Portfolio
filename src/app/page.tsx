@@ -9,6 +9,7 @@ import ExperienceSection from '@/components/Experience/Section_Experience';
 import { useBannerEffect } from '@/utils/useBannerEffect';
 import { Footer } from '@/components/layout/Footer';
 import { Resumen } from '@/components/Resumen/Resumen';
+import SplashCursor from '@/Animations/SplashCursor/SplashCursor';
 
 type Dot = {
   x: number;
@@ -27,6 +28,7 @@ export default function Home() {
 
   return (
     <main ref={bannerRef} className="banner flex flex-col min-h-screen relative">
+      <SplashCursor />
       <canvas ref={canvasRef} id="dotsCanvas" className="absolute top-0 left-0 w-full h-full opacity-50 backdrop-blur-2xl" />
       <div className="flex flex-col flex-grow overflow-y-auto scroll-smooth">
         <section className='w-full flex justify-center items-center mt-10 relative left-0 top-0 z-50'>
@@ -48,7 +50,6 @@ export default function Home() {
           <Resumen />
         </section>
       </div>
-
       <div className='mt-20'>
         <Footer />
       </div>
