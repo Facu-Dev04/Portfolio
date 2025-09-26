@@ -10,6 +10,7 @@ import {
     IconBrandHtml5,
     IconBrandCss3,
 } from '@tabler/icons-react';
+import { Icon_MaterialUI, Icon_TackStack, Icon_Zustand } from '../../public/Icon/Icon';
 
 const iconSize = 35;
 
@@ -74,6 +75,24 @@ export const skills = [
         name: 'CSS',
         icon: <IconBrandCss3 size={iconSize} />,
         color: 'text-[#3178C6]',
+    },
+    {
+        id: 13,
+        name: 'Material UI',
+        icon: <Icon_MaterialUI width={35} height={35} />,
+        color: 'text-[#3178C6]',
+    },
+    {
+        id: 14,
+        name: 'Zustand',
+        icon: <Icon_Zustand width={35} height={35} />,
+        color: 'text-[#61DAFB]',
+    },
+    {
+        id: 15,
+        name: "TackStack Query",
+        icon: <Icon_TackStack width={35} height={35}/>,
+        color: 'text-[#61DAFB]',
     }
 
 ];

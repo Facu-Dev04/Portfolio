@@ -20,11 +20,11 @@ export const date = [
         tools: ["React", "TypeScript", "HTML", "CSS", "Tailwind_CSS"]
     }, {
         id: 3,
-        url: "/img/Project/ecommerce.png",
+        url: "/img/Project/Primarket/Primarket.png",
         title: "Tienda Virtual",
-        parrafo: "Tienda online que ofrece una amplia variedad de productos, permitiendo a los clientes comprar fácilmente desde la comodidad de su hogar.",
-        link_codigo: "https://github.com/Visual2024/PreEntrega3---Facundo-Pettersson",
-        link_deploy: "https://tienda-web.vercel.app/",
-        tools: ["React", "Tailwind_CSS", "HTML", "CSS", "Figma"]
+        parrafo: "Ecommerce B2B de venta de materia prima, que conecta Proveedores con Pymes mejorarndo la comunicación entre ambas partes.",
+        link_codigo: "",
+        link_deploy: "https://primarket.codershub.top/",
+        tools: ["Nextjs", "Material UI", "Zustand", "TackStack Query"]
     }
 ]
