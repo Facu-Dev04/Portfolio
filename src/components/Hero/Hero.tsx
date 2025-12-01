@@ -30,11 +30,8 @@ export function Hero() {
                             <Link href={"https://www.linkedin.com/in/facundo-pettersson/"} target='_blank'>
                                 <Icon_Linkedi width={25} height={25} />
                             </Link>
-                            <Link href={"https://github.com/Visual2024"} target='_blank'>
+                            <Link href={"https://github.com/Facu-Dev04"} target='_blank'>
                                 <Icon_GitHub width={25} height={24} />
-                            </Link>
-                            <Link href={"https://gitlab.com/Visual20241"} target='_blank'>
-                                <Icon_GitLab width={25} height={25} />
                             </Link>
 
                         </div>
