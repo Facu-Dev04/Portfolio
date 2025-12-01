@@ -22,7 +22,7 @@ export function ProjectCards({ date }: type) {
 
   return (
     <CardContainer >
-      <CardBody className={`relative group bg-transparent dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] `}>
+      <CardBody className={`relative group bg-transparent dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] h-full w-auto w-full `}>
         <CardItem
           translateZ="50"
           className="text-xl text-center font-bold text-white  "

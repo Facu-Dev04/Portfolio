@@ -8,10 +8,6 @@ import Orb from '@/Backgrounds/Orb/Orb';
 
 export function Hero() {
 
-    const handleAnimationComplete = () => {
-        console.log('All letters have animated!');
-    };
-
     return (
         <section className="banner flex flex-row w-full relative " id='Hero'>
             <div className="absolute top-0 left-0 w-full h-full " />
@@ -27,8 +23,7 @@ export function Hero() {
                             pauseBetweenAnimations={1}
                         />
                         <h2 className="md:w-[65%] md:text-[16px] pt-3 w-full text-[14.6px] ">
-                            Desarrollador web con más de 1 años y medio de experiencia en diseño frontend, creando interfaces atractivas
-                            y funcionales que mejoran la experiencia del usuario.
+                            Desarrollador con más de 2 años y medio de experiencia desarrollando productos digitales, creando interfaces atractivas y funcionales que mejoran la experiencia del usuario.
                         </h2>
                         <div className='flex flex-row gap-x-10 w-[85%] mt-5 '>
 

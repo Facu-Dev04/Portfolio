@@ -8,9 +8,9 @@ export function Projects() {
     const data = date;
 
     return (
-        <main className="relative pt-20 ">
-            <h1 className="font-bold  font-inter text-5xl text-center  z-10">Projectos Personales</h1>
-            <section className="grid grid-cols-3 gap-y-32 mt-10 grid-flow-row grid-rows-2 justify-center items-center gap-x-5 max-[1200px]:grid-cols-2 max-[900px]:grid-cols-1 mb-20">
+        <main className="relative pt-20 mb-10">
+            <h1 className="font-bold font-inter text-5xl text-center z-10">Projectos Personales</h1>
+            <section className="grid grid-cols-3 mt-10 grid-flow-row justify-center gap-x-0 gap-y-24 max-[1200px]:grid-cols-2 max-[900px]:grid-cols-1">
                 {data.map((item) => {
                     return (
                         <div key={item.id}>

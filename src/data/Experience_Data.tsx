@@ -1,5 +1,14 @@
 export const EXPERIENCE = [
     {
+        id: 'job1',
+        title: 'Colaborador - Primarket',
+        position: "Frontend Developer & CTO",
+        url: "https://primarket.codershub.top/",
+        startDate: 'Mayo 2025 - Noviembre 2025',
+        endDate: "",
+        description: 'Colabore en el desarrollo de Primarket un Ecommerces B2B de venta de materia prima, que conecta Proveedores con Pymes mejorarndo la comunicación entre ambas partes. Me encargue tanto de la parte Técnica como organizativa, liderando el equipo de desarrollo y asegurando que la plataforma fuese intuitiva y efectiva para los usuarios finales.',
+    },
+    {
         id: 'job2',
         title: 'Freelance - Colaboración en Justina.io',
         position: "Frontend Developer",

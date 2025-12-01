@@ -33,7 +33,7 @@ export function Header() {
                     <li><button onClick={() => scrollToSection('experiencia')} className="hover:text-emerald-400 transition duration-500">Experiencia</button></li>
                     <li><button onClick={() => scrollToSection('habilidades')} className="hover:text-emerald-400 transition duration-500">Habilidades</button></li>
                     <li><button onClick={() => scrollToSection('proyectos')} className="hover:text-emerald-400 transition duration-500">Proyectos</button></li>
-                    <li><button onClick={() => scrollToSection('resumen')} className="hover:text-emerald-400 transition duration-500">Resumen</button></li>
+                    <li><button onClick={() => scrollToSection('contact')} className="hover:text-emerald-400 transition duration-500">Contacto</button></li>
                     {/* <li><button onClick={() => scrollToSection('contacto')} className="hover:text-emerald-400 transition duration-500">Contacto</button></li> */}
                 </ul>
             </nav>
@@ -44,7 +44,7 @@ export function Header() {
                 <button onClick={() => scrollToSection('experiencia')} className="bg-transparent hover:text-emerald-400 transition duration-500 py-2">Experiencia</button>
                 <button onClick={() => scrollToSection('habilidades')} className="bg-transparent hover:text-emerald-400 transition duration-500 py-2">Habilidades</button>
                 <button onClick={() => scrollToSection('proyectos')} className="bg-transparent hover:text-emerald-400 transition duration-500 py-2">Proyectos</button>
-                <button onClick={() => scrollToSection('resumen')} className="bg-transparent hover:text-emerald-400 transition duration-500 py-2">Resumen</button>
+                <button onClick={() => scrollToSection('contact')} className="bg-transparent hover:text-emerald-400 transition duration-500 py-2">Contacto</button>
                 {/* <button onClick={() => scrollToSection('contacto')} className="bg-transparent hover:text-emerald-400 transition duration-500 py-2">Contacto</button> */}
             </nav>
         </header>
