@@ -2,6 +2,42 @@ import Image from "next/image";
 
 export const data = [
     {
+        title: "Primarket",
+        parrafo: "May. 2025 - 8 meses",
+        content: (
+            <div className="relative z-10 ">
+                <h1 className="text-white font-bold text-3xl pb-4 ">CoFounder && CTO</h1>
+                <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 ">
+                    Me encargue de la gestion y organizacion tanto de los equipos, como de la documentacion, la elección de herramientas, metodologias de Trabajo, y una comunicación constante con el equipo para sacar un MVP estable al mercado.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                    <Image
+                        src="/img/Project/Cirosoft/Cirosoft_Lading.png"
+                        alt="startup template"
+                        width={400}
+                        height={400}
+                        className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                        src="/img/Project/Cirosoft/Cirosoft_Lading1.png"
+                        alt="startup template"
+                        width={500}
+                        height={500}
+                        className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                        src="/img/Project/Cirosoft/Cirosoft_Lading2.png"
+                        alt="startup template"
+                        width={500}
+                        height={500}
+                        className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+
+                </div>
+            </div>
+        ),
+    },
+    {
         title: "Cirosoft",
         parrafo: "Ago. 2024 - 4 meses",
         content: (

@@ -13,19 +13,21 @@ interface type {
     link_deploy: string;
     link_codigo: string;
     tools: string[];
+    width: number;
+    height: number;
   }
 }
 
 export function ProjectCards({ date }: type) {
 
-  const { url, title, parrafo, link_codigo, link_deploy, tools } = date;
+  const { url, title, parrafo, link_codigo, link_deploy, tools, width, height } = date;
 
   return (
     <CardContainer >
-      <CardBody className={`relative group bg-transparent dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] h-full w-auto w-full `}>
+      <CardBody className={`relative group bg-transparent dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] h-full w-full `}>
         <CardItem
           translateZ="50"
-          className="text-xl text-center font-bold text-white  "
+          className="text-3xl pb-4 text-center font-bold text-white  "
         >
           {title}
         </CardItem>
@@ -41,9 +43,9 @@ export function ProjectCards({ date }: type) {
           <Link href={link_deploy} target="_blank">
             <Image
               src={url}
-              height={1000}
-              width={1000}
-              className="h-60 w-full object-cover rounded-xl filter grayscale group-hover:filter-none transition-all duration-300"
+              height={height}
+              width={width}
+              className={`h-[${height}px] w-[${width}px] object-contain rounded-xl filter grayscale group-hover:filter-none transition-all duration-300`}
               alt="thumbnail"
 
             />
