@@ -1,12 +1,21 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: process.env.NODE_ENV === "production", // Solo habilitar en producción
+  reactStrictMode: true, // ✅ Siempre habilitado para detectar problemas
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production", // ✅ Eliminar console.logs en producción
+  },
   eslint: {
-    ignoreDuringBuilds: process.env.NODE_ENV === "production", // Ignorar en producción
+    ignoreDuringBuilds: process.env.NODE_ENV === "production",
   },
   images: {
-    domains: ['assets.aceternity.com'],
+    formats: ["image/avif", "image/webp"], // ✅ Formatos modernos optimizados
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "assets.aceternity.com",
+      },
+    ],
   },
 };
 

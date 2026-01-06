@@ -4,7 +4,7 @@
 
 import { useEffect, useRef } from "react";
 import { Renderer, Program, Mesh, Triangle, Vec3 } from "ogl";
-import './Orb.css';
+import "./Orb.css";
 
 interface OrbProps {
   hue?: number;
@@ -260,8 +260,32 @@ export default function Orb({
     container.addEventListener("mouseleave", handleMouseLeave);
 
     let rafId: number;
+    let frameCount = 0;
+    let isVisible = true;
+
+    // Pausa el rendering cuando el Orb no está visible
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+        if (!isVisible) {
+          cancelAnimationFrame(rafId);
+        } else {
+          rafId = requestAnimationFrame(update);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(container);
+
     const update = (t: number) => {
+      if (!isVisible) return;
+
       rafId = requestAnimationFrame(update);
+      frameCount++;
+
+      // Ejecutar solo cada 2 frames (30fps en vez de 60fps)
+      if (frameCount % 2 !== 0) return;
+
       const dt = (t - lastTime) * 0.001;
       lastTime = t;
       program.uniforms.iTime.value = t * 0.001;
@@ -269,7 +293,8 @@ export default function Orb({
       program.uniforms.hoverIntensity.value = hoverIntensity;
 
       const effectiveHover = forceHoverState ? 1 : targetHover;
-      program.uniforms.hover.value += (effectiveHover - program.uniforms.hover.value) * 0.1;
+      program.uniforms.hover.value +=
+        (effectiveHover - program.uniforms.hover.value) * 0.1;
 
       if (rotateOnHover && effectiveHover > 0.5) {
         currentRot += dt * rotationSpeed;
@@ -281,11 +306,14 @@ export default function Orb({
     rafId = requestAnimationFrame(update);
 
     return () => {
+      observer.disconnect();
       cancelAnimationFrame(rafId);
       window.removeEventListener("resize", resize);
       container.removeEventListener("mousemove", handleMouseMove);
       container.removeEventListener("mouseleave", handleMouseLeave);
-      container.removeChild(gl.canvas);
+      if (gl.canvas.parentElement) {
+        container.removeChild(gl.canvas);
+      }
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
   }, [hue, hoverIntensity, rotateOnHover, forceHoverState]);

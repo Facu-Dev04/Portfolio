@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d_cards";
 import Image from "next/image";
@@ -15,42 +15,52 @@ interface type {
     tools: string[];
     width: number;
     height: number;
-  }
+  };
 }
 
 export function ProjectCards({ date }: type) {
-
-  const { url, title, parrafo, link_codigo, link_deploy, tools, width, height } = date;
+  const {
+    url,
+    title,
+    parrafo,
+    link_codigo,
+    link_deploy,
+    tools,
+    width,
+    height,
+  } = date;
 
   return (
-    <CardContainer >
-      <CardBody className={`relative group bg-transparent dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] h-full w-full `}>
+    <CardContainer>
+      <CardBody className="relative group bg-transparent dark:bg-transparent h-full w-full">
         <CardItem
           translateZ="50"
-          className="text-3xl pb-4 text-center font-bold text-white  "
+          className="text-3xl text-center font-bold text-white  "
         >
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mb-5 dark:text-white hover:text-red-500 user-select-none cursor-default"
+          className="text-neutral-500 pb-4 text-sm max-w-sm dark:text-white hover:text-red-500 user-select-none cursor-default"
           onMouseDown={(e: any) => e.preventDefault()}
         >
           {parrafo}
         </CardItem>
         <CardItem translateZ="100" className="w-full">
           <Link href={link_deploy} target="_blank">
-            <Image
-              src={url}
-              height={height}
-              width={width}
-              className={`h-[${height}px] w-[${width}px] object-contain rounded-xl filter grayscale group-hover:filter-none transition-all duration-300`}
-              alt="thumbnail"
-
-            />
+            <div className="relative w-full h-[280px] overflow-hidden rounded-xl bg-gray-900 transition-all duration-[1200ms] ease-in-out group-hover:scale-[1.01]">
+              <Image
+                src={url}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover group-hover:object-contain filter grayscale group-hover:filter-none transition-all duration-[1200ms] ease-in-out"
+                alt={title}
+                loading="lazy"
+                quality={85}
+              />
+            </div>
           </Link>
-
         </CardItem>
 
         <div className="mt-10">

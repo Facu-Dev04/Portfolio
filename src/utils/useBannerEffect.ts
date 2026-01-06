@@ -8,6 +8,18 @@ type Dot = {
   color: string;
 };
 
+// Throttle function para limitar la frecuencia de ejecución
+const throttle = (func: Function, limit: number) => {
+  let inThrottle: boolean;
+  return function (this: any, ...args: any[]) {
+    if (!inThrottle) {
+      func.apply(this, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+};
+
 export const useBannerEffect = (
   bannerRef: RefObject<HTMLDivElement | null>,
   canvasRef: RefObject<HTMLCanvasElement | null>,
@@ -40,7 +52,7 @@ export const useBannerEffect = (
 
     const drawDots = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      dots.forEach((dot:any) => {
+      dots.forEach((dot: any) => {
         ctx.fillStyle = dot.color;
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, dot.size, 0, Math.PI * 2);
@@ -48,13 +60,14 @@ export const useBannerEffect = (
       });
     };
 
-    const handleMouseMove = (event: MouseEvent) => {
+    // Throttled mousemove - máximo 60fps
+    const handleMouseMove = throttle((event: MouseEvent) => {
       drawDots();
       const mouse = {
         x: event.pageX - banner.getBoundingClientRect().left,
         y: event.pageY - banner.getBoundingClientRect().top,
       };
-      dots.forEach((dot:any) => {
+      dots.forEach((dot: any) => {
         const distance = Math.sqrt(
           (mouse.x - dot.x) ** 2 + (mouse.y - dot.y) ** 2
         );
@@ -67,7 +80,7 @@ export const useBannerEffect = (
           ctx.stroke();
         }
       });
-    };
+    }, 16); // ~60fps máximo
 
     const handleMouseOut = () => drawDots();
 
